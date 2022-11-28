@@ -6,12 +6,12 @@ class Responsible < Formula
 
   on_arm do
     url "https://github.com/responsibleapi/responsible/releases/download/v#{version}/responsible-arm64"
-    sha256 "62601829a8eb169f3e8aece1178ac2145bbc657c861b1d989ad4be7d9d60446c"
+    sha256 "f2c3d7fb9934b9f4f2576ac3d8e4f48f1f178fc6eb1ade4557ad03a82f4f6ef6"
   end
 
   on_intel do
     url "https://github.com/responsibleapi/responsible/releases/download/v#{version}/responsible-x64"
-    sha256 "502fed5c9c926cd580136465adab4dbd058598067c8daba620568dc3147bb329"
+    sha256 "16ac574149cb7800dc841a8d198fd0d6cd959f65a8a1a00fc35001be87b8324d"
   end
 
   def install
