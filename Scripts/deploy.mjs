@@ -6,7 +6,7 @@ const DIST = path.join(CLI, "dist");
 
 const version = await within(async () => {
   cd(CLI);
-  // await $`yarn deploy`;
+  await $`yarn deploy`;
 
   const vn = await $`jq -r .version package.json`;
   return vn.stdout.trim();
