@@ -7,7 +7,7 @@ class Responsible < Formula
   on_macos do
     on_arm do
       url "https://github.com/responsibleapi/responsible/releases/download/v#{version}/responsible-arm64"
-      sha256 "bec60175858d25af10ddca81ae53a4595fe1dc86ea1b648576b09912d8e7e848"
+      sha256 "b268129b75957286da1b1cc5c756e5bac9feaa6e68e93fc1ccc26278137ac590"
   
       def install
         bin.install "responsible-arm64" => "responsible"
@@ -16,7 +16,7 @@ class Responsible < Formula
 
     on_intel do
       url "https://github.com/responsibleapi/responsible/releases/download/v#{version}/responsible-x64"
-      sha256 "59cefbb6e9413e337d39eff6e545479e4b7fb20af3fc2303b2f0ad8c5e97888c"
+      sha256 "0d52f280e6b3e156c19896d29ba097dfbef4d62425cc951906e48a3ee8861c0b"
   
       def install
         bin.install "responsible-x64" => "responsible"
