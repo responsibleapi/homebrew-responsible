@@ -1,24 +1,26 @@
 class Responsible < Formula
   desc "Responsible DSL to OpenAPI transpiler"
   homepage "https://responsibleapi.com"
-  version "0.1.2"
+  version "0.1.9"
   license "MIT"
 
-  on_arm do
-    url "https://github.com/responsibleapi/responsible/releases/download/v#{version}/responsible-arm64"
-    sha256 "f2c3d7fb9934b9f4f2576ac3d8e4f48f1f178fc6eb1ade4557ad03a82f4f6ef6"
-
-    def install
-      bin.install "responsible-arm64" => "responsible"
+  on_macos do
+    on_arm do
+      url "https://github.com/responsibleapi/responsible/releases/download/v#{version}/responsible-arm64"
+      sha256 "bec60175858d25af10ddca81ae53a4595fe1dc86ea1b648576b09912d8e7e848"
+  
+      def install
+        bin.install "responsible-arm64" => "responsible"
+      end
     end
-  end
 
-  on_intel do
-    url "https://github.com/responsibleapi/responsible/releases/download/v#{version}/responsible-x64"
-    sha256 "16ac574149cb7800dc841a8d198fd0d6cd959f65a8a1a00fc35001be87b8324d"
-
-    def install
-      bin.install "responsible-x64" => "responsible"
+    on_intel do
+      url "https://github.com/responsibleapi/responsible/releases/download/v#{version}/responsible-x64"
+      sha256 "59cefbb6e9413e337d39eff6e545479e4b7fb20af3fc2303b2f0ad8c5e97888c"
+  
+      def install
+        bin.install "responsible-x64" => "responsible"
+      end
     end
   end
 
